@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LDPC Properties Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">LDPC</div>
+    <ul class="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Properties</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>Discover Your Perfect London Property</h1>
+    <p>Explore hundreds of listings, get AI guidance, and book viewings instantly.</p>
+    <button>View Listings</button>
+  </header>
+
+  <!-- Filters -->
+  <div class="filters">
+    <input type="text" id="search-input" placeholder="Search by name or area">
+    <select id="filter-beds">
+      <option value="">Beds (min)</option>
+      <option value="1">1+</option>
+      <option value="2">2+</option>
+      <option value="3">3+</option>
+      <option value="4">4+</option>
+    </select>
+    <input type="number" id="filter-price" placeholder="Max Price">
+    <button onclick="applyFilters()">Apply</button>
+  </div>
+
+  <!-- Property Listings -->
+  <section class="properties">
+    <h2>Featured Properties</h2>
+    <div class="property-cards" id="property-cards">
+      <!-- Cards generated dynamically by JS -->
+    </div>
+  </section>
+
+  <!-- AI Chatbox -->
+  <div id="ai-chatbox">
+    <div id="chat-header">LDPC AI Assistant</div>
+    <div id="chat-messages"></div>
+    <input id="chat-input" placeholder="Ask about our properties..." />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
